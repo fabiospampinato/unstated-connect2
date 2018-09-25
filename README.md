@@ -27,6 +27,7 @@ connect ({
 ```ts
 import connect from 'unstated-connect2';
 import MyContainer from './my_container';
+import MyOtherContainer from './my_other_container';
 import MyComponent from './my_component';
 
 // The following code will:
@@ -42,6 +43,11 @@ connect ({
     bar: container.getBar ()
   }
 })( MyComponent )
+
+// If all you need is subscribing to one or multiple containers, you can simply write:
+
+connect ( MyContainer )( MyComponent );
+connect ( [MyContainer, MyOtherContainer] )( MyComponent );
 ```
 
 ## Related

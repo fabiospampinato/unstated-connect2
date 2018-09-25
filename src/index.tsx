@@ -10,6 +10,12 @@ import withContainers from 'unstated-with-containers';
 
 function connect ( options: any = {} ) {
 
+  if ( _.isArray ( options ) ) {
+    options = { containers: options };
+  } else if ( _.isFunction ( options ) ) {
+    options = { container: options };
+  }
+
   return function wrapper ( WrappedComponent ) {
 
     let ConnectedComponent = WrappedComponent;
