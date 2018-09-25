@@ -33,7 +33,7 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "react-selectr": "^1.0.1",
-    "react-should-component-update": "^1.0.1",
+    "react-should-component-update": "^1.1.0",
     "unstated-with-containers": "^1.1.2"
   },
   "devDependencies": {
