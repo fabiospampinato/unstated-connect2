@@ -14,19 +14,19 @@ function connect ( options: any = {} ) {
 
     let ConnectedComponent = WrappedComponent;
 
-    if ( options.containers ) {
-      ConnectedComponent = withContainers ( ...options.containers )( ConnectedComponent );
-    } else if ( options.container ) {
-      ConnectedComponent = withContainers ( options.container )( ConnectedComponent );
+    if ( options.selector ) {
+      const pure = _.isBoolean ( options.pure ) ? options.pure : true;
+      ConnectedComponent = selectr ( options.selector, { pure } )( ConnectedComponent );
     }
 
     if ( options.shouldComponentUpdate ) {
       ConnectedComponent = shouldComponentUpdate ( ..._.castArray ( shouldComponentUpdate ) )( ConnectedComponent );
     }
 
-    if ( options.selector ) {
-      const pure = _.isBoolean ( options.pure ) ? options.pure : true;
-      ConnectedComponent = selectr ( options.selector, { pure } )( ConnectedComponent );
+    if ( options.containers ) {
+      ConnectedComponent = withContainers ( ...options.containers )( ConnectedComponent );
+    } else if ( options.container ) {
+      ConnectedComponent = withContainers ( options.container )( ConnectedComponent );
     }
 
     return ConnectedComponent;
