@@ -49,6 +49,8 @@ connect ({
 - **[react-selectr](https://github.com/fabiospampinato/react-selectr)**: Simple selector for React components.
 - **[react-should-component-update](https://github.com/fabiospampinato/react-should-component-update)**: Higher-Order Component for adding `shouldComponentUpdate` to components. It supports easy to set shortcuts.
 - **[unstated-with-containers](https://github.com/fabiospampinato/unstated-with-containers)**: Higher-Order Component for providing unstated containers to a component.
+- **[unstated-suspense](https://github.com/fabiospampinato/unstated-suspense)**: Unstated container with support for suspending/unsuspending updates propagation.
+- **[unstated-compose-suspense](https://github.com/fabiospampinato/unstated-compose-suspense)**: unstated-compose containers with support for suspending/unsuspending updates propagation.
 
 ## License
 
