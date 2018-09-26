@@ -25,7 +25,7 @@ function connect ( options: any = {} ) {
       ConnectedComponent = selectr ( options.selector, { pure } )( ConnectedComponent );
     }
 
-    if ( options.shouldComponentUpdate ) {
+    if ( options.hasOwnProperty ( 'shouldComponentUpdate' ) ) {
       ConnectedComponent = shouldComponentUpdate ( ..._.castArray ( options.shouldComponentUpdate ) )( ConnectedComponent );
     }
 
