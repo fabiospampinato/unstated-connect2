@@ -26,7 +26,7 @@ function connect ( options: any = {} ) {
     }
 
     if ( options.shouldComponentUpdate ) {
-      ConnectedComponent = shouldComponentUpdate ( ..._.castArray ( shouldComponentUpdate ) )( ConnectedComponent );
+      ConnectedComponent = shouldComponentUpdate ( ..._.castArray ( options.shouldComponentUpdate ) )( ConnectedComponent );
     }
 
     if ( options.containers ) {
