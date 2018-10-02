@@ -1,6 +1,6 @@
-# Unstated Connect
+# Unstated Connect2
 
-Easily connect your containers to components, without sacrificing performance.
+Connect containers to components, without sacrificing performance.
 
 This library basically combines together [react-selectr](https://github.com/fabiospampinato/react-selectr), [react-should-component-update](https://github.com/fabiospampinato/react-should-component-update) and [unstated-with-containers](https://github.com/fabiospampinato/unstated-with-containers) together.
 

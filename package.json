@@ -1,6 +1,6 @@
 {
   "name": "unstated-connect2",
-  "description": "Easily connect your containers to components, without sacrificing performance.",
+  "description": "Connect containers to components, without sacrificing performance.",
   "version": "1.1.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
     "lodash": "^4.17.11",
     "react-selectr": "^1.0.1",
     "react-should-component-update": "^1.1.0",
-    "unstated-with-containers": "^1.1.2"
+    "unstated-with-containers": "^1.1.4"
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
@@ -42,7 +42,6 @@
     "react": "^16.5.2",
     "rimraf": "^2.6.0",
     "tslint": "^4.4.2",
-    "typescript": "^3.0.3",
-    "unstated": "^2.1.1"
+    "typescript": "^3.0.3"
   }
 }
